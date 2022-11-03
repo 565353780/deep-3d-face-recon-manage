@@ -10,7 +10,7 @@ pip install torch torchvision torchaudio \
   --extra-index-url https://download.pytorch.org/whl/cu113
 
 pip install tensorboard==1.15.0
-pip install tensorflow==1.15.0
+pip install tensorflow-gpu==1.15.0
 
 cd nvdiffrast
 pip install .
