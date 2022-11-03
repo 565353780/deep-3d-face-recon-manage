@@ -1,3 +1,7 @@
 # output
 checkpoints
 
+# model
+BFM/01_MorphableModel.mat
+BFM/Exp_Pca.bin
+
