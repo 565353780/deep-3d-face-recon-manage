@@ -96,6 +96,4 @@ def main(rank, opt, name='examples'):
 
 if __name__ == '__main__':
     opt = TestOptions().parse()
-    print(opt)
-    exit()
     main(0, opt, opt.img_folder)
