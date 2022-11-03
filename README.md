@@ -1,5 +1,13 @@
 # Deep 3D Face Recon Manage
 
+## Install
+
+```bash
+conda create -n face python=3.6
+conda activate face
+./setup.sh
+```
+
 ## Download
 
 ```bash
@@ -20,7 +28,7 @@ https://drive.google.com/drive/folders/1liaIxn9smpudjjqMaWWRpP0mXRW_qRPP?usp=sha
 set it as
 
 ```bash
-Deep3DFaceRecon_pytorch
+deep-3d-face-recon-manage
 │
 └─── BFM
     │
@@ -32,7 +40,7 @@ Deep3DFaceRecon_pytorch
 ```
 
 ```bash
-Deep3DFaceRecon_pytorch
+deep-3d-face-recon-manage
 │
 └─── checkpoints
     │
@@ -41,18 +49,10 @@ Deep3DFaceRecon_pytorch
         └─── epoch_20.pth
 ```
 
-## Install
-
-```bash
-conda create -n face python=3.6
-conda activate face
-./setup.sh
-```
-
 ## Prepare Data
 
 ```bash
-Deep3DFaceRecon_pytorch
+deep-3d-face-recon-manage
 │
 └─── <folder_to_test_images>
     │
@@ -84,7 +84,9 @@ Image[0][1] : Down
 ## Run
 
 ```bash
-python test.py --name=face_recon --epoch=20 --img_folder=./example_image/
+python test.py --name=face_recon --epoch=20 --img_folder=<folder_to_test_images>
+or
+./test.sh
 ```
 
 ## Enjoy it~
