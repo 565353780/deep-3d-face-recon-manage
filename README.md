@@ -36,7 +36,7 @@ Deep3DFaceRecon_pytorch
 │
 └─── checkpoints
     │
-    └─── <model_name>
+    └─── face_recon_feat0.2_augment
         │
         └─── epoch_20.pth
 ```
@@ -47,7 +47,39 @@ Deep3DFaceRecon_pytorch
 conda create -n face python=3.6
 conda activate face
 ./setup.sh
-`Exp_Pca.bin``
+```
+
+## Prepare Data
+
+```bash
+Deep3DFaceRecon_pytorch
+│
+└─── <folder_to_test_images>
+    │
+    └─── *.jpg/*.png
+    |
+    └─── detections
+        |
+	└─── *.txt
+```
+
+where \*.txt saves 5 key points
+
+```bash
+left eye center
+right eye center
+nose center
+left mouth
+right mouth
+```
+
+with option
+
+```bash
+Image[0][0] : Left Up
+Image[1][0] : Right
+Image[0][1] : Down
+```
 
 ## Run
 
