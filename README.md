@@ -36,7 +36,7 @@ Deep3DFaceRecon_pytorch
 │
 └─── checkpoints
     │
-    └─── face_recon_feat0.2_augment
+    └─── face_recon
         │
         └─── epoch_20.pth
 ```
@@ -84,7 +84,7 @@ Image[0][1] : Down
 ## Run
 
 ```bash
-python demo.py
+python test.py --name=face_recon --epoch=20 --img_folder=./example_image/
 ```
 
 ## Enjoy it~
