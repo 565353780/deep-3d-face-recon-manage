@@ -84,9 +84,7 @@ Image[0][1] : Down
 ## Run
 
 ```bash
-python test.py --name=face_recon --epoch=20 --img_folder=<folder_to_test_images>
-or
-./test.sh
+python test.py --name=face_recon --epoch=20 --img_folder=./sample_image/
 ```
 
 ## Enjoy it~
