@@ -16,5 +16,6 @@ cd nvdiffrast
 pip install .
 cd ..
 
+cp -r ./Deep3DFaceRecon_pytorch/BFM ./deep-3d-face-recon-manage/BFM
 cp -r ./insightface/recognition/arcface_torch ./Deep3DFaceRecon_pytorch/models/
 
